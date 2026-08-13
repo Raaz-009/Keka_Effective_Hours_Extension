@@ -42,7 +42,7 @@ The same fields are available on the on-page summary card. The setting is stored
 
 ## Keka hostname
 
-The manifest currently allows `*.keka.com` and `*.keka.co`. The supplied screenshot uses `novigo.keka.com`, which is covered by that rule. If another Keka hostname is used, add it to the `matches` list in `manifest.json`, reload the unpacked extension, and refresh the page.
+The manifest currently allows `*.keka.com` and `*.keka.co`. If another Keka hostname is used, add it to the `matches` list in `manifest.json`, reload the unpacked extension, and refresh the page.
 
 ## Markup dependency
 
