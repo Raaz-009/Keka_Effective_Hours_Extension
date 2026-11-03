@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Keka Effective Hours Calculator",
+  "version": "1.4.0",
+  "description": "Shows effective hours completed and remaining toward a configurable daily target on Keka attendance pages.",
+  "permissions": ["storage", "alarms", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Keka Effective Hours",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.keka.com/*", "https://*.keka.co/*"],
+      "js": ["summary-bridge.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://*.keka.com/*", "https://*.keka.co/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "world": "ISOLATED"
+    }
+  ]
+}
