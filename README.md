@@ -1,4 +1,4 @@
-# Keka Effective Hours Calculator
+# Keka Effective Hours Calculator (v10)
 
 This Manifest V3 browser extension reads **today’s Keka attendance log only**. It adds the completed clock-in/clock-out intervals and determines whether the latest attendance state is currently clocked in or clocked out.
 
